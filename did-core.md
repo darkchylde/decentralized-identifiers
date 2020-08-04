@@ -2,6 +2,13 @@
 
 A DID is functionally a URN (a persistent name for a resource that will never change, unlike URLs which changes based on the location of the resource it is pointing to) that in many cases can be resolved into one or more URLs. These URLs can then be used to interact with the resource through the web.
 
+4 core properties of a DID
+
+1. A permanent(persistent) identifier - It never changes
+2. A resolvable identifier - Can resolved to metadata
+3. A cryptographically-verifiable identifier - Prove the control(or ownership) using cryptography
+4. A decentralized identifier - No centralized registration authority is required
+
 * Verifiable
 * Decentralized
 * Can represent anything (decided by the controller)
@@ -147,10 +154,8 @@ Components
 
 # Reference(s)
 
-https://w3c.github.io/did-core/
-
-https://identity.foundation/
-
-https://github.com/decentralized-identity
-
-https://sovrin.org/faq/what-is-self-sovereign-identity/
+1. https://w3c.github.io/did-core/
+2. https://identity.foundation/
+3. https://github.com/decentralized-identity
+4. https://sovrin.org/faq/what-is-self-sovereign-identity/
+5. https://ssimeetup.org/decentralized-identifiers-dids-fundamentals-identitybook-info-drummond-reed-markus-sabadello-webinar-46/
