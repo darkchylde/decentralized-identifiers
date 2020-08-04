@@ -1,5 +1,6 @@
 # Decentralized identifiers
 
+A DID is functionally a URN (a persistent name for a resource that will never change, unlike URLs which changes based on the location of the resource it is pointing to) that in many cases can be resolved into one or more URLs.
 
 * Verifiable
 * Decentralized
@@ -109,6 +110,37 @@ Components
     for e.g. did:sov:12345678#keys-1 , here keys-1 is the fragment, it is similar to URI fragment syntax for e.g. wikipedia.com/india#capital
 
 * **DID method**
+
+    Definition of how DID scheme must be implemented to work with a specific verifiable data registry.
+    A DID method is defined by DID method specification, which must specify the precise operations by which DIDs are created, resolved and deactivated and DID documents are written and updated.
+
+* **DID path**
+
+    The portion of DID URL that begins with and includes the forward slash (\) character ends with either a question mark (?) or a fragment hash sign (#) character (or the end of the DID URL). 
+    It is similar to URI path. for e.g. https://wikipedia.org/documents/india/kerala.html , here /documents/india/kerala.html is the path
+
+* **DID query**
+
+    The portion of DID URL that follows and includes the first question mark character (?). It is similar to URI query. for e.g. www.google.com?search=india where query is ?search=india
+
+* **DID resolution**
+
+    The function that takes as its input a **DID** and set of input metadata and **returns a DID document**in a **conforming representation**plus additional metadata. 
+    This function relies on **READ** operation of the applicable DID method.
+
+* **DID resolver**
+
+    Software/hardware that performs DID resolution i.e. taking DID as input and produces conforming DID document as output
+
+* **DID scheme**
+
+    Syntax of DID.
+    Generic DID scheme begins with prefix **did:**
+    Each DID method specification must define a specific DID scheme that works with that specific DID method.
+    In a specific DID method scheme, the DID method name must follow the first colon and terminate with the second colon for e.g. did:sov:, did:jlinc:, did:igrant:
+
+* **DID subject**
+
 
 
 
