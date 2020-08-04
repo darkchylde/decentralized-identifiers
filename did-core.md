@@ -1,6 +1,6 @@
 # Decentralized identifiers
 
-A DID is functionally a URN (a persistent name for a resource that will never change, unlike URLs which changes based on the location of the resource it is pointing to) that in many cases can be resolved into one or more URLs.
+A DID is functionally a URN (a persistent name for a resource that will never change, unlike URLs which changes based on the location of the resource it is pointing to) that in many cases can be resolved into one or more URLs. These URLs can then be used to interact with the resource through the web.
 
 * Verifiable
 * Decentralized
@@ -125,7 +125,7 @@ Components
 
 * **DID resolution**
 
-    The function that takes as its input a **DID** and set of input metadata and **returns a DID document**in a **conforming representation**plus additional metadata. 
+    The function that takes as its input a **DID** and set of input metadata and **returns a DID document**in a **conforming representation** plus additional metadata. 
     This function relies on **READ** operation of the applicable DID method.
 
 * **DID resolver**
