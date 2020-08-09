@@ -213,6 +213,31 @@ Components
     Similar to DIDs, that is UUIDs **do not require a centralized registration authority**
     UUIDs differ from DIDs in that they are **not resolvable** or **cryptographically-verifiable**
 
+# Identifier
+
+## DID syntax
+
+* DID scheme and method name **MUST** be an **ASCII lowercase string**
+* Below is the ABNF definition
+
+    - did = "did:" method-name ":" method-specific-id
+    
+    - method-name = 1*method-char
+
+    - method-char = %x61-7A / DIGIT
+
+    - method-specific-id = *( *idchar ":" ) 1*idchar
+
+    - idchar = ALPHA / DIGIT / "." / "-" / "_"
+
+* The above definition is for a generic DID. For e.g. below is ABNF definition for jlinc DID
+
+    - jlinc-did = "did:jlinc:" id-string
+    
+    - id-string = 1* idchar
+    
+    - idchar    = ALPHA / DIGIT / "-" / "_"
+
 
 # How does DID work ?
 
@@ -231,3 +256,4 @@ Identifier is used to identify something and interact with it (Resolution). DIDs
 3. https://github.com/decentralized-identity
 4. https://sovrin.org/faq/what-is-self-sovereign-identity/
 5. https://ssimeetup.org/decentralized-identifiers-dids-fundamentals-identitybook-info-drummond-reed-markus-sabadello-webinar-46/
+6. https://en.wikipedia.org/wiki/Augmented_Backus%E2%80%93Naur_form
