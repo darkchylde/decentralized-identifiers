@@ -201,8 +201,17 @@ Components
 
 * **verifiable method**
 
-    A set of parameters that can be used together with a process or protocol to independently verify a proof.
+    A set of parameters that can be used together with a process or protocol to independently verify a proof. For e.g. a public key can be used as verification method with respect to a digital signature, in this case, it verifies that the signer possessed the associated private key.
 
+* **verification relationship**
+
+    Relationship between **DID subject** and **a verification method**.
+
+* **Universally Unique Identifier(UUID)**
+
+    A type of globally unique identifier.
+    Similar to DIDs, that is UUIDs **do not require a centralized registration authority**
+    UUIDs differ from DIDs in that they are **not resolvable** or **cryptographically-verifiable**
 
 
 # How does DID work ?
