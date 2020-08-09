@@ -148,6 +148,69 @@ Components
 
 * **DID subject**
 
+    The entity identified by a DID and described by the DID document
+
+* **DID URL**
+
+    A DID plus additional syntactic components like optional DID fragment, DID path, DID query
+
+* **DID URL dereferencing**
+
+    The function that takes DID, DID document and additional metadata as input and returns a resource. This resource can be a DID document or may be a secondary resource contained within the DID document or it may be resource entirely external to the DID document. 
+    If the function only recieves DID URL as input, then it uses DID resolution function to get the associated DID document, the dereferencing function can then perform additional processing on the DID document to return the dereferenced resource indicated by the DID URL.
+
+* **distributed ledger (DLT)**
+
+    A distributed database in which the various nodes use a consensus protocol to maintain a shared ledger in which each transaction is cryptographically signed and chained to the previous transactions. (**Merkle tree**)
+
+* **public key description**
+
+    A data object contained inside a DID document that contains all the metadata necessary to use a public key or verification key.
+
+* **resource**
+
+    Any resource may serve as DID subject identified by a DID.
+
+* **representation**
+
+    A DID document is representation of information describing a DID subject. There are multiple DID representation formats (Need to check which are these formats ?)
+
+* **service**
+
+    A means to commmunicate with a resource (DID subject or associated entities) via one or more service endpoints. e.g. discovery services, agent services, social networking services, file storage services and verifiable credential repository services.
+
+* **service endpoint**
+
+    A network address at which a service operates on behalf of the DID subject
+
+* **Uniform resource identifier(URI)**
+
+    The standard identifier format for all resources on the world wide web. A DID is a type of URI scheme.
+
+* **verifiable credential**
+
+    The standard data model and **representation format** for **cryptographically-verifiable** digital credentials as defined by W3C.
+
+* **verifiable data registry**
+
+    A system that facilitates the creation, verification, updating and/or deactivation of decentrailized identifiers and DID documents. A verifiable data registry may also be used for other cryptographically-verifiable data  structures such as verifiable credentials. 
+
+* **verifiable timestamp**
+
+    A verifiable timestamp enables a third-party to verify that a data object existed at a specific moment in time and that it has not been modified or corrupted since that moment in time. If the data integrity could reasonably have modified or corrupted since that moment in time, the timestamp is not verifiable.
+
+* **verifiable method**
+
+    A set of parameters that can be used together with a process or protocol to independently verify a proof.
+
+
+
+# How does DID work ?
+
+Identifier is used to identify something and interact with it (Resolution). DIDs resolves to document. They contains basic data to interact with the subject. The resource that controls the DID and DID document is called **controller**. The DID controller can be itself or a third party. 
+
+## What does a DID document contain ?
+
 
 
 
